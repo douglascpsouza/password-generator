@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.35rem;
+  line-height: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 1.3rem;
+  padding-left: 0.7rem;
+}
+
+input[type="submit"], button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+button, input[type="submit"] {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: var(--primary-color-darker);
+}
+
+input[type="number"] {
+  font-size: 1.25rem;
+  height: 2rem;
+  width: 5rem;
+}
+
+input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+button, input[type="submit"] {
+  display: block;
+  margin: 40px 0;
+  font-size: 1.25rem;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.new-password {
+  color: var(--primary-color);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.messages {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+}
